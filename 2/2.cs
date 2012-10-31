@@ -16,7 +16,19 @@ namespace _2
 		/// <param name="args"></param>
 		static void Main(string[] args)
 		{
+			_2 main = new _2();
+			main.fibonacci(4000000);
+			Console.ReadKey();
+		}
 
+		private int fibonacci(int target)
+		{
+			if (target == 1 || target == 2)
+				return target;
+			else
+			{
+				return target;
+			}
 		}
 	}
 }
