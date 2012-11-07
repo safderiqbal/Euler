@@ -17,18 +17,27 @@ namespace _2
 		static void Main(string[] args)
 		{
 			_2 main = new _2();
-			main.fibonacci(4000000);
+			Console.WriteLine("The sum of the even-values of a Fibonacci sequence, that does not exceed four million is " + main.fibonacci(4000000));
 			Console.ReadKey();
 		}
 
 		private int fibonacci(int target)
 		{
-			if (target == 1 || target == 2)
-				return target;
-			else
+			int total = 0;
+			int i = 1;
+			int j = 2;
+			int f;
+			while (true)
 			{
-				return target;
+				f = i + j;
+				i = j;
+				j = f;
+				if (j >= target)
+					break;
+				if (j % 2 == 0)
+					total += j;
 			}
+			return total;
 		}
 	}
 }
