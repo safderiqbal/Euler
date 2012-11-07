@@ -62,7 +62,6 @@ namespace _4
 				{
 					if (main.isPalindrome(value1 * value2))
 					{
-						Console.WriteLine(value1 + ":" + value2);
 						return value1 * value2;
 					}
 				}
