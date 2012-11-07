@@ -15,7 +15,25 @@ namespace _3
 		/// <param name="args"></param>
 		static void Main(string[] args)
 		{
+			_3 main = new _3();
+			Console.WriteLine("Project Euler\n\nProblem 3");
+			int result = main.largestPrimeFactor(600851475143);
+			Console.WriteLine("The largest prime factor of 600851475143 is " + result);
+			Console.ReadKey();
+		}
 
+		public int largestPrimeFactor(long target)
+		{
+			int i;
+			for (i = 2; i <= target; i++)
+			{
+				if (target % i == 0)
+				{
+					target /= i;
+					i--;
+				}
+			}
+			return i;
 		}
 	}
 }

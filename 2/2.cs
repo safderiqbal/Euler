@@ -17,6 +17,7 @@ namespace _2
 		static void Main(string[] args)
 		{
 			_2 main = new _2();
+			Console.WriteLine("Project Euler\n\nProblem 2");
 			Console.WriteLine("The sum of the even-values of a Fibonacci sequence, that does not exceed four million is " + main.fibonacci(4000000));
 			Console.ReadKey();
 		}
