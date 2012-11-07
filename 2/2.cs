@@ -23,19 +23,19 @@ namespace _2
 
 		private int fibonacci(int target)
 		{
-			int total = 0;
-			int i = 1;
-			int j = 2;
-			int f;
+			int total = 2;	// Initialised to two for 'value2's initial value.
+			int value1 = 1;
+			int value2 = 2;
+			int fib;
 			while (true)
 			{
-				f = i + j;
-				i = j;
-				j = f;
-				if (j >= target)
+				fib = value1 + value2;
+				value1 = value2;
+				value2 = fib;
+				if (value2 >= target)
 					break;
-				if (j % 2 == 0)
-					total += j;
+				if (value2 % 2 == 0)
+					total += value2;
 			}
 			return total;
 		}
