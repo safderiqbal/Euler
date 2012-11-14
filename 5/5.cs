@@ -15,7 +15,7 @@ namespace _5
 		/// <param name="args"></param>
 		static void Main(string[] args)
 		{
-
+			
 		}
 	}
 }
